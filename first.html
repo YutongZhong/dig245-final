@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta tags, links to css, etc. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>final</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- visible content goes here -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p>
+          In this scenario, imagine you are creating an account for a website offering some sort of product or service.
+          Proceed as you normally would, filling in the required fields. When the form is complete, click the sign in button.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <form>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" placeholder="Enter first name">
+              </div>
+              <div class="col">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" placeholder="Enter last name">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password">
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="checkbox" value="empty">
+              <label class="form-check-label" for="checkbox">
+                We may contact you about products and services you may like unless you click to opt out
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" id="loginButton">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- links to javascripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script>
+    $('#checkbox').click(function() {
+      var checkbox = $('#checkbox').val();
+      if (checkbox == "empty") {
+        $('#checkbox').val("checked");
+      } else {
+        $('#checkbox').val("empty");
+      }
+    })
+
+    $('#loginButton').click(function() {
+      // get the value of a form element
+      var checkbox = $('#checkbox').val();
+      if (checkbox == "empty") {
+        window.location.href = 'first_wrong.html';
+      } else {
+        window.location.href = 'first_correct.html';
+      }
+      return false;
+    });
+  </script>
+
+</body>
+
+</html>
