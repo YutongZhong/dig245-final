@@ -1,2 +1,107 @@
+body {
+  background-color: black;
+}
 
-/* css */
+.horror {
+  font-family: 'Creepster', cursive;
+  color: #ff0000;
+  text-align: center;
+  font-size: 4.5rem;
+  padding-top: 5rem;
+}
+
+.intro {
+  color: white;
+  padding: 3rem 5rem;
+  font-size: 1.2rem;
+}
+
+.btn-intro {
+  background-color: #ff6600;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.btn-intro:hover {
+  background: #ff8533;
+  color: white;
+}
+
+.instructions {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 5rem;
+}
+
+.inner {
+  background-color: white;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+}
+
+.correct {
+  font-family: 'Indie Flower', cursive;
+  color: white;
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.correct span {
+  background-color: #009933;
+  padding: 1rem 1rem;
+}
+
+.explanation {
+  color: white;
+  margin-top: 3rem;
+  padding: 1rem 5rem;
+  font-size: 1.2rem;
+}
+
+.btn-next {
+  border-color: #ff6600;
+  color: #ff6600;
+}
+
+.btn-next:hover {
+  background: #ff6600;
+  color: white;
+}
+
+.wrong {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.wrong span {
+  background-color: #ff0000;
+  padding: 1rem 1rem;
+}
+
+.container-second {
+  width: 75%;
+}
+
+.book {
+  height: 15rem;
+}
+
+.btn-order {
+  background-color: #ffcc00;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.btn-order:hover {
+  color: white;
+}
+
+.final {
+  color: white;
+  padding: 5rem 5rem;
+  font-size: 1.2rem;
+}

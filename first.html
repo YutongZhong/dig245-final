@@ -18,45 +18,47 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <p>
+        <p class="instructions">
           In this scenario, imagine you are creating an account for a website offering some sort of product or service.
-          Proceed as you normally would, filling in the required fields. When the form is complete, click the sign in button.
+          Proceed as you normally would, filling in the required fields. When the form is complete, click the "Register" button.
         </p>
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <form>
-          <div class="form-group">
-            <div class="form-row">
-              <div class="col">
-                <label for="firstName">First name</label>
-                <input type="text" class="form-control" placeholder="Enter first name">
-              </div>
-              <div class="col">
-                <label for="lastName">Last name</label>
-                <input type="text" class="form-control" placeholder="Enter last name">
+        <div class="container inner">
+          <form>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col">
+                  <label for="firstName">First name</label>
+                  <input type="text" class="form-control" placeholder="Enter first name">
+                </div>
+                <div class="col">
+                  <label for="lastName">Last name</label>
+                  <input type="text" class="form-control" placeholder="Enter last name">
+                </div>
               </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Enter password">
-          </div>
-          <div class="form-group">
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="checkbox" value="empty">
-              <label class="form-check-label" for="checkbox">
-                We may contact you about products and services you may like unless you click to opt out
-              </label>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
             </div>
-          </div>
-          <button type="submit" class="btn btn-primary" id="loginButton">Sign in</button>
-        </form>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="checkbox" value="empty">
+                <label class="form-check-label" for="checkbox">
+                  We may contact you about products and services you may like unless you click to opt out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="loginButton">Register</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>

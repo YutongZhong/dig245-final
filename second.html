@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta tags, links to css, etc. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>final</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- visible content goes here -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="instructions">
+          You have just finished adding some books to your cart. You are now ready to complete your order and checkout.
+          Please review the items below and make sure that this is everything you want and nothing more. When you’re ready,
+          please click ‘Place Your Order’.
+        </p>
+      </div>
+    </div>
+    <div class="container inner container-second">
+      <div class="row row1 my-2">
+        <div class="col">
+          <img src="assets/img/1984.jpg" alt="1984" class="img-fluid book">
+        </div>
+        <div class="col">
+          <p>
+            <b>1984 by George Orwell</b>
+            <br>
+            $19.99
+            <br>
+            <br>
+            Delivered by Sat, April 11th
+            <br>
+            <br>
+            <button type="button" class="btn btn-outline-secondary remove1">Remove</button>
+          </p>
+        </div>
+      </div>
+      <div class="row row2 my-2">
+        <div class="col">
+          <img src="assets/img/gatsby.jpg" alt="the great gatsby" class="img-fluid book">
+        </div>
+        <div class="col">
+          <p>
+            <b>The Great Gatsby by F. Scott Fitzgerald</b>
+            <br>
+            $14.49
+            <br>
+            <br>
+            Delivered by Sun, April 12th
+            <br>
+            <br>
+            <button type="button" class="btn btn-outline-secondary remove2">Remove</button>
+          </p>
+        </div>
+      </div>
+      <div class="row row3 my-2">
+        <div class="col">
+          <img src="assets/img/mockingbird.jpg" alt="to kill a mockingbird" class="img-fluid book">
+        </div>
+        <div class="col">
+          <p>
+            <b>To Kill a Mockingbird by Harper Lee</b>
+            <br>
+            $17.99
+            <br>
+            <br>
+            Delivered by Sat, April 11th
+            <br>
+            <br>
+            <button type="button" class="btn btn-outline-secondary remove3">Remove</button>
+          </p>
+        </div>
+      </div>
+      <div class="row my-2">
+        <div class="col">
+          People who ordered the above items are also interested in:
+        </div>
+      </div>
+      <div class="row row4 my-2">
+        <div class="col">
+          <img src="assets/img/rye.jpg" alt="the catcher in the rye" class="img-fluid book">
+        </div>
+        <div class="col">
+          <p>
+            <b>The Catcher in The Rye by J.D. Salinger</b>
+            <br>
+            $13.99
+            <br>
+            <br>
+            Delivered by Fri, April 10th
+            <br>
+            <br>
+            <button type="button" class="btn btn-outline-secondary remove4">Remove</button>
+          </p>
+        </div>
+      </div>
+      <div class="row my-2">
+        <div class="col text-center">
+          <button type="button" class="btn submit btn-order">Place Your Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- links to javascripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script>
+    let remove = false;
+
+    $('.remove1').click(function() {
+      $('.row1').hide();
+    });
+
+    $('.remove2').click(function() {
+      $('.row2').hide();
+    });
+
+    $('.remove3').click(function() {
+      $('.row3').hide();
+    });
+
+    $('.remove4').click(function() {
+      remove = true;
+      $('.row4').hide();
+    });
+
+    $('.submit').click(function() {
+      if (remove) {
+        window.location.href = 'second_correct.html';
+      } else {
+        window.location.href = 'second_wrong.html';
+      }
+      return false;
+    });
+  </script>
+
+</body>
+
+</html>
